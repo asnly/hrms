@@ -1,0 +1,220 @@
+//email_verify
+	.captcha-txt {
+   		 height: 22px;
+    	 line-height: 22px;
+   		 vertical-align: middle;
+   		 border: 1px solid #7e9eb7;
+    	 width: 70px;
+	}	
+	.savebox .letit {
+		width: 130px;
+		text-align: right;
+		color: #666;
+		display: inline-block;
+	}
+	.clearfix {
+		display: block;
+	}
+	.pi-ibox {
+		position: relative;
+		padding-top: 20px;
+		text-align: left;
+		font: 12px "宋体";
+		overflow: hidden;
+	}
+	.stepbox li.cur {
+		background: #cb0101;
+		color: #fff;
+	}
+	.stepbox li {
+		float: left;
+		height: 23px;
+		line-height: 23px;
+		background: #e0e0e0;
+		font-weight: 700;
+		position: relative;
+		overflow: hidden;
+	}
+	.stepn3 li {
+		width: 33.3%;
+	}
+	.stepbox li b {
+		left: 0;
+		top: 0;
+	}
+	.stepbox li b, .stepbox li em {
+		background-position: -155px -327px;
+		position: absolute;
+	}
+   .stepbox li em {
+		background: url(../../img/pc_img/page-ui.png) no-repeat;
+		padding: 23px 0 0 15px;
+		display: inline-block;
+	}
+	span{
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+	}
+	.pi-ibox input {
+		height: 22px;
+		line-height: 22px;
+		vertical-align: middle;
+		_margin-top: -4px;
+	}
+	.cursor {
+		cursor: pointer;
+	}
+	.minor strong {
+		line-height: 26px;
+	}
+
+	.minor strong {
+		background-position: 0 -780px;
+		line-height: 25px;
+		font-weight: 700;
+	}
+	.commonbtn strong {
+		padding: 0 2px;
+		line-height: 25px;
+		display: block;
+		_display: inline-block;
+	}
+	.minor span, .minor strong {
+		background-position: 0 -780px;
+		line-height: 25px;
+		font-weight: 700;
+	}
+	.commonbtn span {
+		padding-right: 10px;
+		display: block;
+		_display: inline-block;
+	}
+	.clearfix {
+		zoom: 1;
+	}
+	.mt30 {
+		margin-top: 30px;
+	}
+	.steppurity {
+		text-align: center;
+	}
+	section, article, aside, header, footer, nav, dialog, figure, hgroup {
+		display: block;
+	}
+	.mr50 {
+		margin-right: 50px;
+	}
+	.ml50 {
+	
+	}
+	.stepbox {
+		height: 23px;
+		overflow: hidden;
+	}
+	.clearfix:before, .clearfix:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	.clearfix:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	.stepbox li.cur em {
+		background-position: -135px -327px;
+	}
+	.pi-ibox p {
+		margin-bottom: 12px;
+		padding-top: 4px;
+	}
+	.pi-ibox a {
+		color: #0066cc;
+		text-decoration: none;
+	}
+	.minor {
+		background-position: 0 -780px;
+		border: 1px solid #FF7C00;
+	}
+	
+	.commonbtn, .commonbtn span, .commonbtn strong {
+		background: url(../../img/pc_img/button.gif) repeat-x 0 -200px;
+		display: inline-block;
+		color: #FFF;
+		line-height: 24px;
+		font-size: 14px;
+	}
+	 li {
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+		list-style: none;
+	}
+	.stepbox li em {
+		right: 0;
+		_right: -1px;
+		top: 0;
+	}
+	strong,a,b, em {
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+	}
+	strong,em {
+		font-style: normal;
+		font-weight: 400;
+	}
+	.stepbox li b, .stepbox li em {
+		background: url(../../img/pc_img/page-ui.png) no-repeat;
+		padding: 23px 0 0 15px;
+		display: inline-block;
+	}
+	b, strong {
+		font-weight: bold;
+	}
+	.stepbox li em,.stepbox li b {
+		background-position: -155px -327px;
+		position: absolute;
+	}
+	
+	a:hover.commonbtn{text-decoration:none;background-position:0 -240px;color:#FFF}
+	a:hover.commonbtn span{background-position:right -320px}
+	a:hover.commonbtn strong{background-position:right -280px}
+	
+	.ipt-comm {
+		border: 1px solid #7e9eb7;
+		height: 23px;
+		line-height: 23px;
+	}
+	.commonbtn {
+		padding-left: 10px;
+		border: 1px solid #FF7C00;
+	}
+	.stepbox li.cur b {
+		background-position: -115px -327px;
+	}
+	.nextbtn {
+		background:#c00;
+		padding-left: 10px;
+		color: #FFF;
+		line-height: 24px;
+		font-size: 24px;
+		padding-left: 15px;
+		padding-bottom: 5px;
+		padding-right: 15px;
+	}
+	.nextbtn:hover{
+		background-color:#d00;	
+	}
+	.btnspan{
+		color:#FFF;
+		font-size: 14px;
+	}
+	 p{
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+	}	

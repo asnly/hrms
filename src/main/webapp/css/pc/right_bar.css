@@ -1,0 +1,109 @@
+/* from meilishuo */
+.goTop {
+    padding: 0px;
+    right: 0;
+    position: fixed;
+    z-index: 450;
+    width: 54px;
+    font-size: 12px;
+    bottom:50px;
+}
+
+.goTop li {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    height: 54px;
+    float: left;
+    margin-top: -1px;
+    width: 100%;
+    list-style:none;
+}
+
+.goTop li .ico_top, .goTop li .ico_serviceqq, .goTop li .ico_guide, .goTop li .ico_cart, .goTop li .ico_home, .goTop li .ico_fav{
+    background: url("../../img/pc_img/right_bar.png") no-repeat;
+    float: left;
+    text-align: center;
+    height: 32px;
+    margin-left: 10px;
+    width: 34px
+}
+
+.goTop li .ico_top {
+    background-position: -225px -107px;
+    cursor: pointer;
+    margin-top: 15px
+}
+
+.goTop li .ico_cart {
+    background-position:-145px -100px;
+    margin-top: 8px
+}
+
+.goTop li .ico_serviceqq {
+    background: url("../../img/pc_img/kf_chat.gif") no-repeat 9px 2px;
+    height: 23px;
+    margin-top: 8px
+}
+
+.goTop li .ico_guide {
+    background-position: -184px -107px;
+    margin-top: 15px
+}
+
+.goTop li .ico_home {
+    background-position: -47px -110px;
+    height:23px;
+    margin-top: 8px
+}
+
+.goTop li .ico_fav {
+    background-position: -133px -65px;
+    height:23px;
+    margin-top: 8px
+}
+
+.goTop li .ico_suggest {
+    background: url("../../img/pc_img/suggest.png") no-repeat;
+    background-size: 24px 21px;
+    float: left;
+    text-align: center;
+    height: 23px;
+    margin-left: 17px;
+    margin-top: 8px;
+    width: 34px
+}
+
+.goTop li .ico_top span, .goTop li .ico_guide span {
+    display: none
+}
+
+.goTop li .ico_top:hover, .goTop li .ico_guide:hover {
+    background: 0
+}
+
+.goTop li .ico_top:hover span, .goTop li .ico_guide:hover span {
+    display: block
+}
+
+.goTop li .txt {
+    width: 54px;
+    height: 23px;
+    line-height: 23px;
+    color: #f69;
+    float: left;
+    text-align: center;
+    cursor: pointer
+}
+
+#right_cart_nums {
+	border-radius: 10px;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 4px;
+	padding-right: 4px;
+	position: relative;
+	left: 30px;
+	top: -30px;
+	background: #f69;
+	color: #fff;
+}

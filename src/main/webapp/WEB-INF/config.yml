@@ -1,0 +1,11 @@
+jdbc_url: jdbc:mysql://139.196.222.160:3306/info
+jdbc_user: root
+jdbc_password: clc123456
+
+admin_user: admin
+admin_password: clcadmin
+
+manager_user: zhangsan
+manager_password: zhangsan1234
+
+domain_url: http://127.0.0.1

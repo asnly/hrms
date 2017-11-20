@@ -1,0 +1,190 @@
+@charset "UTF-8";/*2、与字体与显示相关的定义*/
+/*引用牛铺的css*/
+/* 标题 */
+
+.webwidth {
+    width: 1200px;
+    margin: 0px auto;
+        margin-top: 0px;
+        margin-right-value: auto;
+        margin-bottom: 0px;
+        margin-left-value: auto;
+        margin-left-ltr-source: physical;
+        margin-left-rtl-source: physical;
+        margin-right-ltr-source: physical;
+        margin-right-rtl-source: physical;
+}
+.new_reg .title {
+    height: 40px;
+    margin: 54px 0px 20px;
+        margin-top: 54px;
+        margin-right-value: 0px;
+        margin-bottom: 20px;
+        margin-left-value: 0px;
+        margin-left-ltr-source: physical;
+        margin-left-rtl-source: physical;
+        margin-right-ltr-source: physical;
+        margin-right-rtl-source: physical;
+}
+
+.stepbox li.cur {
+    background: none repeat scroll 0% 0% #CB0101;
+        background-color: #CB0101;
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+    color: #FFF;
+}
+.stepn3 li {
+    width: 25%;
+}
+.nextstep {background:#c00;padding-left: 10px;color: #FFF;line-height: 24px;font-size: 24px;padding-left: 15px;padding-bottom: 5px;padding-right: 15px;}
+.nextstep:hover{background-color:#d00;	}
+
+	.btnspan{
+		color:#FFF;
+		font-size: 14px;
+	}
+
+
+
+/*----------------------------------商店入驻头部-------------------*/
+.steppurity {text-align: center;}
+.mr50 {margin-right: 50px;}
+.mt30 {margin-top: 30px;}
+.stepbox li.cur b {background-position: -115px -327px;}
+.stepbox li em,.stepbox li b {background-position: -155px -327px;position: absolute;}
+.stepbox li b, .stepbox li em {background: url(../../img/pc_img/page-ui.png) no-repeat;padding: 23px 0 0 15px;display: inline-block;}
+.stepbox li em {right: 0;_right: -1px;top: 0;}
+.li {margin: 0;padding: 0;font-size: 100%;list-style: none;}
+.steppurity {text-align: center;}
+.stepbox li.cur em {background-position: -135px -327px;}
+.stepbox {height: 23px;overflow: hidden;}
+.stepbox li.cur {background: #cb0101;color: #fff;}
+.stepbox li {float: left;height: 23px;line-height: 23px;background: #e0e0e0;font-weight: 700;position: relative;overflow: hidden;}
+.stepn3 li {width: 25%;}
+.stepbox li b {left: 0;top: 0;}
+.stepbox li b, .stepbox li em {background-position: -155px -327px;position: absolute;}
+.stepbox li em {background: url(../../img/pc_img/page-ui.png) no-repeat;padding: 23px 0 0 15px;display: inline-block;}
+
+
+
+/*----------------------------------商家入驻页面2-------------------*/
+.image{height: 150px;}
+.table tr{height:63px;}
+.table  th {width: 224px; font-size: 14px;color: #666; font-weight: normal;text-align: right;
+    padding-right: 15px;padding-right-value: 15px;padding-right-ltr-source: physical;padding-right-rtl-source: physical;
+}
+form .red {
+    color: #BF2E1B;
+    border: 0px none;
+        border-top-width: 0px;
+        border-right-width-value: 0px;
+        border-right-width-ltr-source: physical;
+        border-right-width-rtl-source: physical;
+        border-bottom-width: 0px;
+        border-left-width-value: 0px;
+        border-left-width-ltr-source: physical;
+        border-left-width-rtl-source: physical;
+        border-top-style: none;
+        border-right-style-value: none;
+        border-right-style-ltr-source: physical;
+        border-right-style-rtl-source: physical;
+        border-bottom-style: none;
+        border-left-style-value: none;
+        border-left-style-ltr-source: physical;
+        border-left-style-rtl-source: physical;
+        border-top-color: -moz-use-text-color;
+        border-right-color-value: -moz-use-text-color;
+        border-right-color-ltr-source: physical;
+        border-right-color-rtl-source: physical;
+        border-bottom-color: -moz-use-text-color;
+        border-left-color-value: -moz-use-text-color;
+        border-left-color-ltr-source: physical;
+        border-left-color-rtl-source: physical;
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-image-source: none;
+        border-image-slice: 100% 100% 100% 100%;
+        border-image-width: 1 1 1 1;
+        border-image-outset: 0 0 0 0;
+        border-image-repeat: stretch stretch;
+}
+.webpage { overflow: hidden;overflow-x: hidden;overflow-y: hidden;}
+.module_common {overflow: hidden;overflow-x: hidden; overflow-y: hidden;margin-bottom: 10px;clear: both;width: 100%;}
+.module_new_shop {width: 908px;border: 1px solid #DDD;border-top-width: 1px;border-right-width-value: 1px;border-right-width-ltr-source: physical;border-right-width-rtl-source: physical;border-bottom-width: 1px;border-left-width-value: 1px;border-left-width-ltr-source: physical;border-left-width-rtl-source: physical;border-top-style: solid;border-right-style-value: solid;border-right-style-ltr-source: physical;
+        border-right-style-rtl-source: physical;border-bottom-style: solid;border-left-style-value: solid;border-left-style-ltr-source: physical;border-left-style-rtl-source: physical;border-top-color: #DDD;border-right-color-value: rgb(221, 221, 221); border-right-color-ltr-source: physical;border-right-color-rtl-source: physical;border-bottom-color: #DDD;border-left-color-value: rgb(221, 221, 221); border-left-color-ltr-source: physical;border-left-color-rtl-source: physical;
+        -moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image-source: none;border-image-slice: 100% 100% 100% 100%;border-image-width: 1 1 1 1; border-image-outset: 0 0 0 0;
+        border-image-repeat: stretch stretch; margin: 0px auto;margin-top: 0px;margin-right-value: auto; margin-bottom: 0px;margin-left-value: auto;margin-left-ltr-source: physical;margin-left-rtl-source: physical;margin-right-ltr-source: physical; margin-right-rtl-source: physical;}
+.info_shop {width: 100%;padding-bottom: 100px;margin-top: 50px;}
+.info_shop table td.title_step2 { height: 52px;padding-bottom: 26px;}
+.mall_settle .info_shop table .x-input, .mall_settle .info_shop table .width_280 {
+    width: 238px;
+    height: 20px;
+    padding: 6px 25px 6px 5px;
+    border: 1px solid #DDD;
+    font-size: 14px;
+    color: #999;
+}
+
+.info_shop table td.padding3 {width: 400px;}
+.mall_settle .info_shop  table tr td h4{ width:850px;font-size:14px;font-weight:bold;height:48px;line-height:48px; padding-top:2px;border-bottom:1px solid #dddddd; color:#bf2e1b; margin:0 auto;}
+.mall_settle .info_shop  table tr td h4 span{display:block;float:left;padding:0px 15px;background:#bf2e1b;border-top-right-radius:5px;border-top-left-radius:5px;color:#fff;}
+.mall_settle .chart{margin:20px 0px 40px 0px}
+.info_shop table td p.sett_p_agr{padding-left:160px;margin:0 auto;padding-bottom:0px;}
+.info_shop table td p.sett_p_agr #notice{background:none;padding:0 0;height:13px;width:13px;}
+.info_shop table td.padding3{width:400px;}
+.info_shop table td.padding3 .tip_erro span{display:block;float:left;}
+.info_shop table td.padding3 .tip_erro .fontColor3{height:26px;text-indent:-9999px;width:8px;background: url(icon_qt.png) 0 -25px no-repeat;}
+.info_shop table td.padding3 .tip_erro .field_notice{height:24px;line-height:24px;border:1px solid #ffc8c8;color:#ff0000;border-left:0px;padding-left:28px;padding-right:10px;background:url(icon_qt.png) -95px 5px no-repeat #ffe1e1;margin-left:0px;}
+.info_shop table td.padding3 .tip_more span{display:block;float:left;}
+.info_shop table td.padding3 .tip_more .fontColor3{height:26px;text-indent:-9999px;width:8px;background:url(icon_qt.png) 0 -75px no-repeat;}
+.info_shop table td.padding3 .tip_more .field_notice{height:24px;line-height:24px;border:1px solid #e3e3e3;color:#7f7f7f;border-left:0px;padding-left:10px;padding-right:10px;background:#f0f0f0;margin-left:0px;}
+.info_shop table td.padding3 .tip_right{height:26px;width:19px;background:url(field_notice_reg_right.gif)no-repeat center center;}
+.info_shop table td.padding3 .tip_right span{display:none;}
+.sett_but_agr{margin:0 13px;display:inline-block;}
+.mall_settle .info_shop  table em{padding:0px 10px;}
+.mall_settle .info_shop  table .x-input,.mall_settle .info_shop  table .width_280{width:238px;height:20px;padding:6px 25px 6px 5px;border:1px solid #dddddd;font-size:14px;color:#999;}
+/*----------------------------------商家入驻页面3-------------------*/
+.mall_settle_end_table  tr  td{padding:10px 0px;}
+/*----------------------------------商家入驻等待结果页面-------------------*/
+.store_4{width:540px; height:280px;color:#333;margin:0 auto 20px; font-size:14px;}
+.store_4t{width:480px;float:right;height:88px;}
+.store_4t h4{color:#ff7701;font-size:34px;padding:20px 0px;font-weight:100;font-family:'Microsoft Yahei';}
+.store_4c{width:448px;float:right;line-height:26px;border:1px solid #fae97a;background:#ffffed;padding:15px 15px;position:relative;z-index:1px;margin:10px 0;}
+.store_4c_bg{position:absolute;z-index:2; background:url(storeapplystep4_bg.jpg) 0 0 no-repeat;width:14px;height:11px;top:-11px;left:10px;}
+.store_4f{width:480px;float:right; padding-bottom:50px;}
+.store_4f a{margin-left:10px;text-decoration:underline;}
+
+/*商户入驻*/
+.crl{clear:both;height:0px;line-height:0px;font-size:0px;}
+.new_reg .title_img{width:1000px;margin:0px auto;}
+.new_reg .title{height:40px;margin:54px 0 20px 0;}
+.title_img img{ display:block; margin:0 auto;}
+.reg_choose_img{display:block;padding-top:6px;}
+.btn-small{ background:#FBF2E6; padding:1px 8px; display:inline-block; vertical-align:middle; color:#333333; border:1px solid #dabebe;}
+
+
+.reg_step_2{width:1200px;margin:0px auto;}
+.reg_shop .fl{width:250px;height:280px;padding:4px 25px;background:url(store/step_2_bg_right.gif) no-repeat center center;cursor:pointer;}
+.reg_shop .fl h3{text-align:center;margin-top:15px;}
+.reg_shop_info{width:190px;padding:10px 30px;font-size:14px;line-height:165%; color:#6c6c6c;}
+.reg_shop div.active{background:url(store/step_2_bg.gif) no-repeat center center;}
+.reg_shop div.last{background:none;}
+.reg_step_tip{line-height:30px;font-size:14px;margin:35px 0px 25px 0px;}
+.reg_step_tip span{color:#ec2019;padding:0px 10px;}
+.t_c{margin:20px auto;text-align:center;}
+a.reg_step_2_button{width:270px;height:54px;line-height:54px;border:0px;cursor:pointer;background:#bf2e1b;display:inline-block;font-size:24px;color:#fff;text-align:center; font-family:'Microsoft Yahei';border-radius:3px;}
+a.reg_step_2_button2{width:170px;height:54px;line-height:54px;border:0px;cursor:pointer;background:#999;display:inline-block;margin-right:20px;font-size:24px;color:#fff;text-align:center;font-family:'Microsoft Yahei';border-radius:3px;}
+a.reg_step_2_button:hover,a.reg_step_2_button2:hover{color:#fff;}
+.reg_body .loginbox .inputstyle{width:230px;padding:6px 35px 6px 14px;}
+.reg_body div .lnk{text-decoration:none;}
+.reg_body div span.FormText{font-size:14px;margin-left:5px;color:#376310;}
+.reg_body .common-btn span span,.reg_body .common-btn span{background:none;}
+.reg_body .common-btn{margin-top:20px;}

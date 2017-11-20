@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+       
+       <!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<!-- replace <mvc:annotation-driven /> start -->
+	<mvc:annotation-driven conversion-service="conversion-service">
+		<mvc:message-converters>
+			<beans:bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+			<beans:bean class="org.springframework.http.converter.StringHttpMessageConverter" >
+				<beans:constructor-arg name="defaultCharset" value="UTF-8" />
+			</beans:bean>
+			<beans:bean class="org.springframework.http.converter.FormHttpMessageConverter" />
+			<beans:bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<beans:bean id="conversion-service" class="org.springframework.format.support.FormattingConversionServiceFactoryBean" />
+        
+        
+        <mvc:interceptors>
+			<mvc:interceptor>
+				<mvc:mapping path="/admin/**" />
+				<beans:bean class="com.shuodao.hrms.interceptor.LoginInterceptor" />
+			</mvc:interceptor>
+		</mvc:interceptors>
+		<mvc:interceptors>
+			<mvc:interceptor>
+				<mvc:mapping path="/user/**" />
+				<beans:bean class="com.shuodao.hrms.interceptor.UserInterceptor"></beans:bean>
+			</mvc:interceptor>
+		</mvc:interceptors>
+        <!-- 自动扫描且只扫描@Controller -->
+        <context:component-scan base-package="com.shuodao.hrms.controller" use-default-filters="false">
+				<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+		</context:component-scan>
+		<!-- Handles HTTP GET requests for static resources efficiently in the ${webappRoot}/xxx directory -->
+		<mvc:resources location="/favicon.ico" mapping="/favicon.ico"/>
+		<mvc:resources location="/crossdomain.xml" mapping="/crossdomain.xml"/>
+        <beans:bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        	<beans:property name="contentType" value="text/html;charset=utf-8" />
+        	<beans:property name="cache" value="true" />
+        	<beans:property name="prefix" value="" />
+        	<beans:property name="suffix" value=".ftl" />
+        	<beans:property name="exposeRequestAttributes" value="true" />
+        	<beans:property name="exposeSessionAttributes" value="true" />
+        	<beans:property name="requestContextAttribute" value="request" />
+        </beans:bean>
+		<!-- 配置异常刨除页面 -->
+	<beans:bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<beans:property name="exceptionMappings">
+			<beans:props>
+				<!--<beans:prop key="com.yy.tuna.core.exception.TunaServiceException">error</beans:prop>-->
+				<beans:prop key="java.lang.Exception">error</beans:prop>
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- the maximum file size in bytes : 10M -->
+		<beans:property name="maxUploadSize" value="10485760" />
+		<!-- the maximum in memory size allowed in bytes : 10M -->
+		<beans:property name="maxInMemorySize" value="10485760" />
+		<beans:property name="defaultEncoding" value="uTF-8" />
+	</beans:bean>
+		
+</beans:beans>

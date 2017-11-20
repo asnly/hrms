@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/* default set */
+@import url("base.css");
+
+/* common*/
+@import url("common.css");

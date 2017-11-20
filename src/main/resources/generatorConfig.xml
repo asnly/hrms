@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry location="/Users/caolinchao/.m2/repository/mysql/mysql-connector-java/5.1.19/mysql-connector-java-5.1.19.jar" />
+	<context id="mhys" targetRuntime="Mybatis3">
+		<commentGenerator>
+			<property name="suppressData" value="true" />
+			<!-- remove comments -->
+			<property name="supressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+			connectionURL="jdbc:mysql://139.196.222.160:3306/info?user=root&amp;password=clc123456&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true" userId="root"
+			password="clc123456" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		
+		<!-- gem entity-->
+		<javaModelGenerator targetPackage="com.shuodao.hrms.db.entity" 
+			targetProject="hrms/src/main/java" >
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+		<!-- gem xml -->
+		<sqlMapGenerator targetPackage="mapper" 
+			targetProject="hrms/src/main/resources" >
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		
+		<!-- gem mapper -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.shuodao.hrms.db.mapper"
+			targetProject="hrms/src/main/java">
+			<property name="enableSubPackages" value="true" />
+			</javaClientGenerator>
+		
+		<!-- <table schema="info" tableName="employee" domainObjectName="employee" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table>
+		
+ 		<table schema="info" tableName="Account" domainObjectName="Account" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+		<!-- <table schema="info" tableName="Contract" domainObjectName="Contract" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+		
+		<!-- <table schema="info" tableName="Detail" domainObjectName="Detail" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+		
+		<!-- <table schema="info" tableName="Dossier" domainObjectName="Dossier" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+		
+		<!--  <table schema="info" tableName="RewardsAndPunishments" domainObjectName="RewardsAndPunishments" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+		<!-- <table schema="info" tableName="CertificateRecord" domainObjectName="CertificateRecord"
+		   enableCountByExample="false" enableSelectByExample="false"
+		   enableUpdateByExample="false" enableDeleteByExample="false">
+		   <generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+		<table schema="info" tableName="trainingRecord" domainObjectName="trainigRecord"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table>
+		<!-- <table schema="info" tableName="AdminUser" domainObjectName="AdminUser"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="admin_id" sqlStatement="JDBC" />
+		</table> -->
+		<!-- <table schema="info" tableName="DeptInfo" domainObjectName="DeptInfo"
+		    enableCountByExample="false" enableSelectByExample="false"
+		    enableUpdateByExample="false" enableDeleteByExample="false">
+		    <generatedKey column="id" sqlStatement="JDBC" />
+		</table> -->
+			<!-- <table schema="info" tableName="InstitutionInfo" domainObjectName="InstitutionInfo"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="Account" domainObjectName="Account" 
+			enableCountByExample="false" enableSelectByExample="false" 
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table>-->
+			
+			<!-- <table schema="info" tableName="RoleInfo" domainObjectName="RoleInfo"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table>  -->
+			
+			<!-- <table schema="info" tableName="DepartmentLevelInfo" domainObjectName="DepartmentLevelInfo"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="Permission" domainObjectName="Permission"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="AccountRole" domainObjectName="AccountRole"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="TrainCategory" domainObjectName="TrainCategory"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="TransferInformation" domainObjectName="TransferInformation"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="TitleRecord" domainObjectName="TitleRecord"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+			<!-- <table schema="info" tableName="DemissionInfo" domainObjectName="DemissionInfo"
+			enableCountByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false">
+			<generatedKey column="id" sqlStatement="JDBC" />
+			</table> -->
+	</context>
+</generatorConfiguration>

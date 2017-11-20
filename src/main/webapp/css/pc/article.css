@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+.exchange ul {
+	padding: 0
+}
+.exchange ul li {
+	line-height: 25px
+}
+.exchange .marginTop15 {
+	margin-top: 15px
+}
+.exchange .marginTop25 {
+	margin-top: 25px
+}
+.exchange .paddLeft20 {
+	padding-left: 20px
+}
+.exchange h4 {
+	margin: 25px 0 15px 0
+}
+.exchange h5 {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 15px 0 15px 0
+}
+.exchange h5.first {
+	padding: 0px 0 15px 0
+}
+.exchange .bd {
+	padding: 0 20px 20px 20px
+}
+.exchange .hd {
+	padding: 20px 0 0 20px
+}
+.exchange table {
+	width: 100%;
+	margin: 10px 0
+}
+.exchange table th, .exchange table td {
+	text-align: left;
+	padding: 10px;
+	line-height: 2;
+	border: 1px solid #ededed
+}
+.exchange .uc-nav-box {
+	padding-bottom: 15px;
+	background: #FAFAFA
+}
+.exchange .uc-nav-box .box-hd {
+	height: 50px;
+	margin: 0 30px;
+	border-bottom: 1px solid #DFDFDF
+}
+.exchange .uc-nav-box .box-hd .title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 50px;
+	color: black
+}
+.exchange .uc-nav-list {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 14px
+}
+.exchange .uc-nav-list li {
+	position: relative
+}
+.exchange .uc-nav-list li a {
+	display: block;
+	padding: 9px 30px;
+	color: #6D6D6D
+}
+.exchange .uc-nav-list li.current {
+	background: #F3F3F3
+}
+.exchange .uc-nav-list li.current a {
+	padding-left: 27px;
+	border-left: 3px solid #FF4A00;
+	color: #333;
+	cursor: default
+}
+
+.service-help-index p {
+	padding-top: 5px
+}
+
+/* xm css file 2*/
+
+.service-base p, .service-base h1, .service-base h2, .service-base dd, .service-base h3, .service-base h4 {
+	padding: 0;
+	margin: 0
+}
+.service-base li {
+	list-style: none
+}
+.service-base ul {
+	margin: 0;
+	padding: 0
+}
+.center {
+	text-align: center
+}
+.btop {
+	border-top: 1px solid #dfdfdf
+}
+.service-right h3 {
+	color: #333;
+	font-size: 18px;
+	font-weight: normal
+}
+.service-right a.link {
+	color: #ff886b
+}
+.service-right a.nostyle {
+	color: #333
+}
+.service-right h4 {
+	color: #000;
+	font-size: 14px;
+	font-weight: normal
+}
+.marginLeft20 {
+	margin-left: 20px
+}
+
+/*xm css in page*/
+.site-header .site-logo .event-115{
+	position:absolute;
+	left:90px;
+	top:5px;
+	z-index:2;
+	width:200px;
+	-webkit-font-smoothing:antialiased
+}
+.site-header .site-logo .event-115 a{
+	display:block;
+	color:#ff4a00
+}
+.site-header .site-logo .event-115 .title{
+	display:block;
+	padding-top:5px;
+	font-size:13px;
+	letter-spacing:0.5px
+}
+.site-header .site-logo .event-115 .remain{
+	display:block;
+	margin:0
+}
+.site-header .site-logo .event-115 .remain span{
+	margin-right:1px;font-size:12px;
+	color:#ffa28d
+}
+.site-header .site-logo .event-115 .remain span b{
+	color:#ff4a00;
+	margin-right:2px;
+	font-size:30px;
+	font-family:'Tw Cen MT';font-weight:normal
+}

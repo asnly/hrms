@@ -1,0 +1,146 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.shuodao.hrms</groupId>
+  <artifactId>hrms</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>hrms Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+    	<groupId>com.shuodao</groupId>
+    	<artifactId>sodo-common</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>dom4j</groupId>
+    	<artifactId>dom4j</artifactId>
+    	<version>1.6.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>jaxen</groupId>
+    	<artifactId>jaxen</artifactId>
+    	<version>1.1.6</version>
+    </dependency>
+    <!-- solrj -->
+    <dependency>
+    	<groupId>org.apache.solr</groupId>
+    	<artifactId>solr-solrj</artifactId>
+    	<version>4.4.0</version>
+    	<type>jar</type>
+    	<scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>cglib</groupId>
+    	<artifactId>cglib</artifactId>
+    	<version>3.1</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>hrms</finalName>
+   <plugins>
+    	<plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-compiler-plugin</artifactId>
+    		<version>2.3.2</version>
+    		<configuration>
+    			<source>1.7</source>
+    			<target>1.7</target>
+    			<showWarnings>true</showWarnings>
+    			<encoding>UTF-8</encoding>
+    			<compilerArguments>
+    				<extdirs>src/main/webapp/WEB-INF/lib</extdirs>
+    			</compilerArguments>
+    		</configuration>
+    	</plugin>
+    	<plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-war-plugin</artifactId>
+    		<version>2.2</version>
+    		<configuration>
+    			<warName>${project.artifactId}</warName>
+    			<archiveClasses>true</archiveClasses>
+    		</configuration>
+    	</plugin>
+    	<plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-assembly-plugin</artifactId>
+    		<version>2.2.1</version>
+    		<configuration>
+    			<descriptors>
+    				<descriptor>./assembly.xml</descriptor>
+    			</descriptors>
+    		</configuration>
+    		<executions>
+    			<execution>
+    				<id>make-assembly</id>
+    				<phase>package</phase>
+    				<goals>
+    					<goal>single</goal>
+    				</goals>
+    			</execution>
+    		</executions>
+    	</plugin>
+    </plugins>
+  </build>
+  
+  <profiles>
+  		<profile>
+  			<id>package-mini</id>
+  			<build>
+  				<plugins>
+  					<plugin>
+  						<groupId>org.apache.maven.plugins</groupId>
+  						<artifactId>maven-antrun-plugin</artifactId>
+  						<version>1.7</version>
+  						<executions>
+  							<!-- 上传zip包 -->
+  							<execution>
+  								<id>upload-mini-package</id>
+  								<phase>package</phase>
+  								<goals>
+  									<goal>run</goal>
+  								</goals>
+  								<configuration>
+  									<tasks>
+  										<taskdef name="scp" 
+  											classname="org.apache.tools.ant.taskdefs.optional.ssh.Scp"
+  											classpathref="maven.plugin.classpath" />
+  										<taskdef name="sshexec"
+  											classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec"
+  											classpathref="maven.plugin.classpath" />
+  										<echo message="-----------------------------------------" />
+  										<echo message="将${project.build.directory}/${project.build.finalName}.tar.gz上传至服务器" />
+  										<scp 
+  											file="${project.build.directory}/${project.build.finalName}-mini-tar.gz"
+  											port="22"
+  											todir="root:asnly)!!*11@139.196.222.160:/opt/jetty/webapps/info/${project.build.finalName}-mini-tar.gz"
+  											verbose="true" trust="true"/>
+  										<sshexec host="139.196.222.160" username="root" password="asnly)!!*11" trust="true"
+  											command="/opt/jetty//bin/jetty.sh start" />
+  										<echo message="-----------------------------------------" />
+  										<echo message="执行命令完毕" />
+  										<echo message="-----------------------------------------" />
+  									</tasks>
+  								</configuration>
+  							</execution>
+  						</executions>
+  						<dependencies>
+  							<dependency>
+  								<groupId>com.jcraft</groupId>
+  								<artifactId>jsch</artifactId>
+  								<version>0.1.42</version>
+  							</dependency>
+  							<dependency>
+  								<groupId>org.apache.ant</groupId>
+  								<artifactId>ant-jsch</artifactId>
+  								<version>1.8.2</version>
+  							</dependency>
+  						</dependencies>
+  					</plugin>
+  				</plugins>
+  			</build>
+  		</profile>
+  </profiles>
+</project>
